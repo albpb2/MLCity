@@ -10,6 +10,16 @@ namespace DistrictPredictorML.Model.DataModels
 {
     public class ModelInput
     {
+        public ModelInput()
+        {
+        }
+
+        public ModelInput(float latitude, float longitude)
+        {
+            LATITUD = latitude;
+            LONGITUD = longitude;
+        }
+
         [ColumnName("LATITUD"), LoadColumn(0)]
         public float LATITUD { get; set; }
 
